@@ -23,7 +23,8 @@ BOTS_ID.push(res[0].id);
 console.log('coded by vk.com/mayorihvh');
 
 
-vk.longpoll.on('message', (message) => {
+vk.longpoll.on('message', (message) => { //тут идет проверка на сообщение, т.е. если присылается новое сообщение и идет проверка на команды
+//тут мы можем сделать некую проверку на бан, думайте сами:)
 let body = message.text.split(' ');
 ///////////////////////////////////////////////////////////////////////////////////////////// тут мы пишем top bot programme
 
